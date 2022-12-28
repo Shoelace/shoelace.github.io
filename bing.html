@@ -6,6 +6,19 @@
     function dosomethign(){
         alert("do something");
     }
+
+    function searchrandomwords(cnt){
+
+      for( i=0; i<cnt ; i++ ){
+
+        let thing = things[Math.floor(Math.random()*things.length)];
+
+        window.open('http://www.bing.com/search?q='+thing, '_blank')
+      }
+
+    }
+
+    var things = ['Rock', 'Paper', 'Scissor'];
 </script>
 </head>
 
@@ -18,5 +31,8 @@
     </p>
 
     <a onclick="for( i=0; i<50 ; i++ ) { window.open('http://www.bing.com/search?q='+i, '_blank')} ">click me </a>
-  </body>
+      or
+      <a onclick="searchrandomwords(50); ">click me </a>
+
+    </body>
 </html>
