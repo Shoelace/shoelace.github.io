@@ -12,8 +12,9 @@
       for( i=0; i<cnt ; i++ ){
 
         let thing = things[Math.floor(Math.random()*things.length)];
+        let thing2 = things[Math.floor(Math.random()*things.length)];
 
-        window.open('http://www.bing.com/search?q='+thing, '_blank')
+        window.open('http://www.bing.com/search?q='+thing+"+"+thing2, '_blank')
       }
 
     }
